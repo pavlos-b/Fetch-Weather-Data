@@ -11,7 +11,7 @@ def get_url():
     city = input("For which city would you like to know the current weather? ")
     query = city + " weather bbc"
     results = []  
-    for j in search(query, tld="co.in", num=10, stop=10, pause=2): 
+    for j in search(query, tld="co.uk", num=10, stop=10, pause=2): 
         results.append(j)
     return(results[0])
 
