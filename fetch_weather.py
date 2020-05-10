@@ -36,6 +36,7 @@ def print_weather(data):
     print('Current weather data from station {}'.format(data.city) + ":")
     print("Temperature: " + data.temperature + "\nHumidity: " + data.humidity + "\nVisibility: " + data.visibility + "\nObservations: " + data.observations)
 
+
 def main():
     href = get_url()
     data = get_weather(href)
